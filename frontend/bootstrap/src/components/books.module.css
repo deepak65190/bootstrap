@@ -1,0 +1,46 @@
+.booksContainer{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+  background-color: aliceblue;
+  grid-template-columns: repeat(4 ,1fr);
+ 
+}
+.singleDiv{
+ height: 300px;
+ background-color: #1a202c;
+  color: white;
+  border-radius: 10px;
+  
+}
+.singleDiv>h3{
+  font-weight: bolder;
+}
+.singleDiv>img{
+  display: block;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  margin: auto;
+  height: 50%;
+
+}
+@media all and (min-width:768px) and (max-width:1024px){
+
+  .booksContainer{
+    width: 100%;
+    
+    margin: auto;
+ grid-template-columns: repeat(2,1fr);
+  }
+}
+@media all and (min-width:0px) and (max-width:767px){
+  
+  .booksContainer{
+    width: 100%;
+    margin: auto;
+ grid-template-columns: repeat(1,1fr);
+  }
+}
